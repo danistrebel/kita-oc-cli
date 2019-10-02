@@ -5,6 +5,5 @@ Installer script for [KITA](https://github.com/danistrebel/kita-operator) enviro
 ## Usage
 
 ```bash
-chmod +x ./install.sh
-./install.sh
+source install.sh
 ```

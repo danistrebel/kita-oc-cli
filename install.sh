@@ -8,4 +8,4 @@ export PATH=$(pwd)/bin/oc:$PATH
 
 SA_TOKEN=$(</var/run/secrets/kubernetes.io/serviceaccount/token)
 
-oc login --token $SA_TOKEN kubernetes.default
+oc login --token $SA_TOKEN --certificate-authority /var/run/secrets/kubernetes.io/serviceaccount/ca.crt kubernetes.default
